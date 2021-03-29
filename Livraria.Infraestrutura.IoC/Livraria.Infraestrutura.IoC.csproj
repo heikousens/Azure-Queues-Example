@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Livraria.Dominio.Model\Livraria.Dominio.Model.csproj" />
+    <ProjectReference Include="..\Livraria.Dominio.Services\Livraria.Dominio.Services.csproj" />
+    <ProjectReference Include="..\Livraria.Infraestrutura.Data\Livraria.Infraestrutura.Data.csproj" />
+    <ProjectReference Include="..\Livraria.Infraestrutura.Services\Livraria.Infraestrutura.Services.csproj" />
+  </ItemGroup>
+
+</Project>
