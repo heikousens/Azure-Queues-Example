@@ -43,10 +43,6 @@ namespace Livraria.Dominio.Services.Services
 
             return livroEntidade;
 
-            //await _functionService.InvokeAsync(new { Id = id });
-            //var livroTask = _repository.GetByIdAsync(id);
-            //return livroTask.Result;
-            //return await _repository.GetByIdAsync(id);
         }
 
         public async Task InsertAsync(LivroEntidade livroEntidade, Stream stream)
@@ -62,8 +58,6 @@ namespace Livraria.Dominio.Services.Services
 
             if (stream != null) {
 
-                //var updateUri = await _blobService.UploadAsync(stream);
-                //livroEntidade.ImageUri = updateUri;
                 var livro = await _repository.GetByIdAsync(livroEntidade.Id);
                 await _blobService.DeleteAsync(livro.ImageUri);
 

@@ -25,7 +25,6 @@ namespace Livraria.Infraestrutura.Data.Repositorios
 
         public async Task<LivroEntidade> GetByIdAsync(int id)
         {
-            //return await _context.LivroEntidade.AsNoTracking().SingleOrDefaultAsync(m => m.Id == id);
             return await _context.LivroEntidade.SingleOrDefaultAsync(m => m.Id == id);
         }
 

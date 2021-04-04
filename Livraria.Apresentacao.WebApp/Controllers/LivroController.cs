@@ -13,12 +13,7 @@ namespace Livraria.Apresentacao.WebApp.Controllers
 {
     public class LivroController : Controller
     {
-        //private readonly LivrariaApresentacaoWebAppContext _context;
 
-        //public LivroController(LivrariaApresentacaoWebAppContext context)
-        //{
-        //    _context = context;
-        //}
         private readonly ILivroService _domainService;
 
         public LivroController(ILivroService domainService)
@@ -57,8 +52,6 @@ namespace Livraria.Apresentacao.WebApp.Controllers
         }
 
         // POST: Livro/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(LivroEntidade livroEntidade)
@@ -91,8 +84,7 @@ namespace Livraria.Apresentacao.WebApp.Controllers
         }
 
         // POST: Livro/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, LivroEntidade livroEntidade)
@@ -123,7 +115,6 @@ namespace Livraria.Apresentacao.WebApp.Controllers
                         throw;
                     }
                 }
-                //return RedirectToAction(nameof(Index));
             }
             return View(livroEntidade);
         }
