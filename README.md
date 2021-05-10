@@ -1,5 +1,5 @@
 # Azure Queues and Functions Example
-Projeto desenvolvido para o Assessment da disciplina Desenvolvimento com Serviços WCF e Microsoft Azure, do Instituto Infnet.
+Projeto desenvolvido para o Assessment da disciplina Desenvolvimento com Serviços WCF e Microsoft Azure.
 Para tanto, foi desenvolvido um um projeto do tipo ASP.NET Core Web MVC, com o tema de cadastro de livros, contendo um CRUD básico (listagem, detalhe, inclusão, alteração, exclusão). A entidade livro possui os seguintes atributos:
 
 - ID do Livro
